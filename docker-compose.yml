@@ -16,3 +16,8 @@ services:
 volumes:
   mpcalc-volume:
     external: true
+
+networks:
+  mp-micro-services:
+    external:
+      name: mpcalchub-microservices_mp-micro-services
