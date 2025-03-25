@@ -16,7 +16,7 @@ public class AppConstants
     {
         public static class RabbitMQ
         {
-            public const string ContactRemoved = "contact.removed";
+            public const string ContactRemoved = "contact.remove.remove";
         }
     }
 }

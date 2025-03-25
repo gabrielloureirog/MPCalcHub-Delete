@@ -7,9 +7,9 @@ namespace MPCalcHub.Api.Robots.RabbitMQ
 {
     public class ContactConsumerService : BaseRabbitMQConsumerService
     {
-        public override string Queue => "mpcalchub.contact_removed";
+        public override string Queue => "mpcalchub.contact_remove";
 
-        public override string RoutingKey => "contact.*";
+        public override string RoutingKey => "contact.remove.*";
 
         public ContactConsumerService(IServiceProvider serviceProvider, IOptions<MPCalcHubSettings> settings,  ILogger<ContactConsumerService> logger)
             : base(serviceProvider, settings, logger)
